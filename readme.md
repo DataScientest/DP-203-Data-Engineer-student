@@ -10,7 +10,7 @@ The following is a summary of the lab objectives for each module:
 
 Before starting the Labs, if you received credentials to activate an azure subscription, you need to activate the Azure Pass on this site: https://www.microsoftazurepass.com/
 
-<button name="button" onclick=https://www.microsoftazurepass.com/>Click me</button>
+[Click me](https://www.microsoftazurepass.com/){: .btn}
 
 Make sure to connect first to the azure account you intend to use during the traaining.
 
