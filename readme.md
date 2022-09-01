@@ -8,6 +8,15 @@ The following is a summary of the lab objectives for each module:
 
 ### Day 1
 
+Before starting the Labs, if you received credentials to activate an azure subscription, you need to activate the Azure Pass on this site: https://www.microsoftazurepass.com/
+
+<button class="Activate Azure Pass"
+        type="button">
+    https://www.microsoftazurepass.com/
+</button>
+
+Make sure to connect first to the azure account you intend to use during the traaining.
+
 #### [Module 00: Lab environment setup](Instructions/Labs/LAB_00_lab_setup_instructions.md)
 
 Complete the lab environment setup for this course.
