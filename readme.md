@@ -12,6 +12,8 @@ Before starting the Labs, if you received credentials to activate an azure subsc
 1. First login into your azure account
 2. Go to https://www.microsoftazurepass.com/ and fill the credentials you received
 
+The activation of the Azure subscription may take several minutes before appearing into your Azure account.
+
 
 #### [Module 00: Lab environment setup](Instructions/Labs/LAB_00_lab_setup_instructions.md)
 
