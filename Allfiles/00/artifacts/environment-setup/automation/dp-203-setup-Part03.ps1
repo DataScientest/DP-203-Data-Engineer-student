@@ -1,6 +1,6 @@
 ﻿Set-ExecutionPolicy Unrestricted
 			
-cd C:\dp-203\data-engineering-ilt-deployment\Allfiles\00\artifacts\environment-setup\automation\
+cd C:\dp-203\DP-203-Data-Engineer\Allfiles\00\artifacts\environment-setup\automation\
 
 # Import modules
 Import-Module Az.CosmosDB
