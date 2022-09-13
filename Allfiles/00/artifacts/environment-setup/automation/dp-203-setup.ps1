@@ -280,6 +280,8 @@ $SetupStep2Variables = "
 
 $SetupStep2Variables
 
+Write-Host "Script1 Complete!"
+
 if(-not ([string]::IsNullOrEmpty($selectedSub)))
 {
     Select-AzSubscription -SubscriptionId $selectedSub
@@ -396,6 +398,8 @@ $SetupStep3Variables = "
 "
 
 $SetupStep3Variables
+
+Write-Host "Script2 Complete!"
 
 if(-not ([string]::IsNullOrEmpty($selectedSub)))
 {
