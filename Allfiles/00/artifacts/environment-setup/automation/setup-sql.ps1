@@ -14,7 +14,7 @@ az login
 
 # Now sign in again for PowerShell resource management and select subscription
 Write-Host "Now sign in again to allow this script to create resources..."
-Connect-AzAccount
+Connect-AzAccount -UseDeviceAuthentication
 
 $subs = Get-AzSubscription | Select-Object
 if($subs.GetType().IsArray -and $subs.length -gt 1){
@@ -52,7 +52,7 @@ if($subs.GetType().IsArray -and $subs.length -gt 1){
 
 $userName = ((az ad signed-in-user show) | ConvertFrom-JSON).UserPrincipalName
 write-host "User Name: $userName"
-$userId = az ad signed-in-user show --query objectId -o tsv
+$userId = az ad signed-in-user show --query id -o tsv
 Write-Host "User ID: $userId"
 
 $resourceGroupName = Read-Host "Enter the name of the resource group containing your Synapse Analytics workspace";
@@ -215,3 +215,5 @@ $linkedServiceName = "$($sqlPoolName.ToLower())_workload02"
 $result = Create-SQLPoolKeyVaultLinkedService -TemplatesPath $templatesPath -WorkspaceName $workspaceName -Name $linkedServiceName -DatabaseName $sqlPoolName `
                 -UserName "asa.sql.workload02" -KeyVaultLinkedServiceName $keyVaultName -SecretName $keyVaultSQLUserSecretName
 Wait-ForOperation -WorkspaceName $workspaceName -OperationId $result.operationId
+
+Write-Host "Script Complete!"
